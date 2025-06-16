@@ -11,8 +11,6 @@
         font-style:italic;
 
         h1{
-            font-size:40px;
-            font-weight:bolder;
             letter-spacing:5px;
             margin-bottom:34px;
             background-image:-webkit-linear-gradient(right bottom,black,#ddd); 
@@ -21,9 +19,7 @@
         }
 
         h3{
-            font-size:24px;
             font-weight:600;
-            color:#fff;
             margin-bottom:65px;
             background-image:-webkit-linear-gradient(117deg,black,#ddd); 
             // aprender a manipular melhor as cores
@@ -45,8 +41,6 @@
         
         &__text{
             h1{
-                font-size:30px;
-                font-weight:bolder;
                 letter-spacing:3px;
                 margin-bottom:20px;
             }

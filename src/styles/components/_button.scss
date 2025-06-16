@@ -1,30 +1,57 @@
+@use 'sass:color';
+
 .button{
     display:block;
     width:100%;
-    padding: 20px 16px;
-    font-size:24px;
+    padding: 20px 4px;
     border-radius:35px;
-    border:none;
+    border:3px solid black;
+    cursor:pointer;
     
     a{
         text-decoration: none;
     }
     
     &--hero{
-        font-style: italic;
         background-color: #fffb00;
-        opacity:.3;
-        
+        opacity:.6;   
+        background-image: radial-gradient(5% 5%, rgb(56, 151, 44), #fffb00);     
+        animation:efeitoBotao infinite 1s ease-in;
         a{
             opacity:1;
             color:#000;
         }
     }
 
+    &--form{
+        max-width:35%;
+        padding:8px;
+        margin:0 auto;
+        font-style:none;
+        background-color:rgb(25, 201, 25) ;
+        color:#000;
+        
+        &:hover{
+            background-color:color.adjust(rgb(25, 201, 25),$lightness:3%);
+        }
+    }
+
+    @keyframes efeitoBotao {
+        to{
+            background-image: radial-gradient(0% 0%, rgb(55, 222, 33), #fffb00); 
+        }
+        from{
+            background-image: radial-gradient(100% 100%, rgb(55, 222, 33), #fffb00); 
+        }
+    }
     @media (max-width:640px){
         width:80%;
         margin:0 auto;
         padding: 12px;
         font-size:20px;
+        
+        &--form{
+            padding:2px 0;
+        }
     }
 }

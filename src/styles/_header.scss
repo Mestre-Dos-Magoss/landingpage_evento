@@ -1,0 +1,41 @@
+.header{
+    padding:20px 0;
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:1;
+    background-image:linear-gradient(#97cb72,#C0DDAB);
+    
+    &--is-active{
+        .header__button{
+            visibility:visible;
+        }
+    }
+
+    .container{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    &__text{
+        color:#000;
+    }
+
+    &__button{
+        visibility:hidden;
+        width:30%;
+        text-decoration: none;
+        text-align:center;
+    }
+
+    @media (max-width:640px){
+        padding:8px 0;
+        .container{
+            display:block;
+        }
+        &__text{
+            text-align:center;
+        }
+    }
+}

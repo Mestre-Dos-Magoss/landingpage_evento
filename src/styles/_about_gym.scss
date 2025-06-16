@@ -1,0 +1,33 @@
+.about-gym{
+       background-image:-webkit-linear-gradient(88deg,#556A76,#243798);
+
+    .container{
+        display:flex;
+    }
+
+    &__description{
+        &__title{
+            padding-top:74px;
+            padding-bottom:30px;
+        }
+
+        &__text{
+            text-align:justify;
+            line-height: 30px;
+        }
+    }
+
+    &__img{
+        width:100%;
+    } 
+
+    @media (max-width:640px){
+        .container{
+            display:block;
+        }
+
+        &__img{
+            height:150%;
+        }
+    }
+}

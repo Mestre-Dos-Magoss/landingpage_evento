@@ -1,0 +1,50 @@
+.contact{
+       background-image:-webkit-linear-gradient(88deg,#556A76,#202e70);
+       padding-top:70px;
+
+    &__title{
+        text-align:center;
+        letter-spacing:5px;
+        padding-bottom:22px;
+    }
+
+    &__text{
+        text-align: center;
+        margin-bottom:42px;
+    }
+
+    &__dados{
+        &__campo{
+            display:block;
+            margin:0 54px 56px;
+
+            input{
+                display:block;
+                width:100%;
+                padding:12px 0;
+                border-radius: 35px;
+                color:#000;
+                font-size:20px;
+            }
+        }
+
+        &__button{
+            letter-spacing: 5px;
+            font-weight: bold;
+        }
+    }
+
+    @media (max-width:640px){
+        
+    &__dados{
+        &__campo{
+            margin:0 0 56px;
+
+            input{
+                padding:8px 0;
+                font-size:16px;
+            }
+        }
+      }
+    }
+} 

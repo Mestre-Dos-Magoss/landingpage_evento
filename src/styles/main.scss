@@ -1,11 +1,16 @@
 @use 'hero';
 @use './components/button';
+@use 'text_description';
+@use 'about_gym';
+@use 'contact';
+@use 'header';
 
 *{
     padding:0;
     margin:0;
     box-sizing:border-box;
     font-family:'Roboto',sans-serif;
+    color:#fff;
 }
 
 .container{
@@ -15,5 +20,53 @@
 
     @media (max-width:640px){
         width:90%;
+    }
+}
+
+@mixin title($Title:40px){
+    font-size:$Title;
+    font-weight:bold;
+}
+
+@mixin text($Text:20px){
+    font-size:$Text;
+    
+}
+.title{
+    @include title;
+    @media (max-width:640px){
+        font-size:30px;         
+    }
+}
+
+.title--small{
+    @include title(36px);
+    @media (max-width:640px){
+        font-size:26px;         
+    }
+}
+
+.text--big{
+    @include text(24px);
+    font-style:italic;
+
+    @media (max-width:640px){
+        font-size:20px;
+    }
+}
+
+.text{
+    @include text;
+
+    @media (max-width:640px){
+        font-size:16px;
+    }
+}
+
+.text--small{
+    @include text(16px);
+
+    @media (max-width:640px){
+        font-size:12px;
     }
 }

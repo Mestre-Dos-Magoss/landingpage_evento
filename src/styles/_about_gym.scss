@@ -27,7 +27,13 @@
         }
 
         &__img{
-            height:150%;
+            width:100%;
+        }
+    }
+    
+    @media (min-width:768) and (max-width:1024px){
+        &__img{
+            width:50%;
         }
     }
 }

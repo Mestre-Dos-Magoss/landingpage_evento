@@ -1,6 +1,5 @@
 .hero{
     background-image:-webkit-linear-gradient(182deg,#556A76,#72a6c4);
-    
     .container{
         display: flex;
         align-items:center;
@@ -53,6 +52,12 @@
         }
         &__img{
             height:100%;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:1024px){
+        &__img{
+            width:50%;
         }
     }
 }   

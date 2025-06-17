@@ -9,6 +9,8 @@
     &--is-active{
         .header__button{
             visibility:visible;
+            opacity:1;
+            transition:opacity, 1s ease;
         }
     }
 
@@ -23,10 +25,12 @@
     }
 
     &__button{
-        visibility:hidden;
         width:30%;
         text-decoration: none;
         text-align:center;
+        visibility:hidden;
+        opacity:0;
+        transition:opacity, .4s ease;
     }
 
     @media (max-width:640px){
@@ -37,5 +41,10 @@
         &__text{
             text-align:center;
         }
+    }
+    @media (min-width:768px) and (max-width:1024px){
+        &__button{
+            max-width: 20%;
+    }
     }
 }
